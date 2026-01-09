@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+/* Section */
+#products{
+    padding:15px;
+    text-align:center;
+}
+
+/* Grid */
+.product-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:15px;
+}
+
+/* Card */
+.product{
+    background:#fff;
+    padding:12px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Image */
+.product img{
+    width:120px;
+    height:160px;
+    object-fit:contain;
+}
+
+/* Title */
+.product h3{
+    font-size:14px;
+    text-align:center;
+    margin:8px 0 0;
+    color:#333;
+}
+
+/* Link */
+.product-link{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ---------- MOBILE VIEW (Flipkart Style) ---------- */
+@media (max-width: 600px){
+
+    .product-grid{
+        grid-template-columns: repeat(2, 1fr); /* 2 products in row */
+        gap:10px;
+    }
+
+    .product{
+        padding:8px;
+        border-radius:10px;
+    }
+
+    .product img{
+        width:90px;
+        height:120px;
+        border-radius: 20px;
+    }
+
+    .product h3{
+        font-size:12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section id="products">
+    <h2>Our Products</h2>
+
+    <div class="product-grid">
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="75mm PVC Y.jpg">
+                <h3>5hp Submersible Pump</h3>
+            </div>
+        </a>
+
+        <a href="Elbow.html" class="product-link">
+            <div class="product">
+                <img src="63mm One Side Threaded Elbow.jpg">
+                <h3>Borewell Pump 5.5 Stage</h3>
+            </div>
+        </a>
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="75mm IT openwell Net.jpg">
+                <h3>Borewell Pump 5.3 Stage</h3>
+            </div>
+        </a>
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="75mm OT openwell Net.jpg">
+                <h3>7.5hp Submersible Pump</h3>
+            </div>
+        </a>
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="75mm PVC Y.jpg">
+                <h3>Borewell Pump 7.10 Stage</h3>
+            </div>
+        </a>
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="90mm PVC Y.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="110mm PVC Y.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="DP Rowad 1.1 KV 25 AMP.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 63mm ELbow Regular.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 63mm Tee 12.5kg.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 63mm Tee Regular.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 75 63mm MTA.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 75mm Elbow 12.5kg.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 75mm FTA.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 75mm MTA.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 110mm Elbow 12.5kg.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 90mm Elbow 12.5kg.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 90mm Tee Regular.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 1L Solvent.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 63mm Tee Regular.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 110mm Tee Regular.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 500ML Solvent.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 75mm Tee 12.5kg.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 63mm Tee 12.5kg.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 90mm Tee Regular.jpg">
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+        <a href="All pump.html" class="product-link">
+            <div class="product">
+                <img src="KASTA 75mm One Side Threaded Elbow.jpg">                
+                <h3>Texmo 1hp Motor</h3>
+            </div>
+        </a>
+
+
+    </div>
+</section>
+
+</body>
+</html>
