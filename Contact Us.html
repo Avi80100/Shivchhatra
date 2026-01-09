@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1> </h1>
+
+
+
+    <!-- Contact -->
+
+  <h2 align="center">Contact Us</h2><br>
+  <p align="center">📞 9307554962 <br> <br>✉ shivchaatra@121.in</p><br><br>
+
+  <form id="contactForm" style="max-width:500px;margin:auto;padding:20px;background:#f4f6f9;border-radius:10px;">
+    <label>Name:</label><br>
+    <input type="text" id="cname" required style="width:100%;padding:8px;margin:5px 0;"><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" id="cphone" required style="width:100%;padding:8px;margin:5px 0;"><br>
+
+    <label>Product Name:</label><br>
+    <input type="text" id="cproduct" required style="width:100%;padding:8px;margin:5px 0;"><br>
+
+    <label>Message:</label><br>
+    <textarea id="cmsg" required style="width:100%;padding:8px;margin:5px 0;"></textarea><br>
+
+    <button type="submit" style="padding:10px 20px;background:#004080;color:#fff;border:none;border-radius:5px;cursor:pointer;">Send via WhatsApp</button>
+  </form>
+
+
+  
+
+    <script>
+
+      // WhatsApp Form Submit
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault(); // page reload 
+
+    let name = document.getElementById("cname").value;
+    let phone = document.getElementById("cphone").value;
+    let product = document.getElementById("cproduct").value;
+    let msg = document.getElementById("cmsg").value;
+
+    // WhatsApp message format
+    let text = `Name: ${name}%0APhone: ${phone}%0AProduct: ${product}%0AMessage: ${msg}`;
+
+    // WhatsApp number - +919307554962
+    let wa_url = `https://wa.me/918010062076?text=${text}`;
+
+    window.open(wa_url,"_blank"); // new tab open
+});
+    </script>
+</body>
+</html>
